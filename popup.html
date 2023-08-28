@@ -13,25 +13,32 @@
 		<title>Youtube Shorts List</title>
 	</head>
 	<body>
-		<h2><img src="icons/32.png" />Youtube Shorts List</h2>
-		<label for="playlistTitle">List title:</label>
-		<input
-			type="text"
-			id="playlistTitle"
-		/>
-		<button id="createPlaylist">Create List</button>
-		<label for="playlistSelect">Select List to add to:</label>
-		<select
-			id="playlistSelect"
-			value="1"
-		></select>
-		<button id="removePlaylist">Remove list</button>
-		<label for="shortName">Short title:</label>
-		<input
-			type="text"
-			id="shortName"
-		/>
-		<button id="addShort">Add Short</button>
+		<h2>Youtube Shorts List</h2>
+		<section class="createLists">
+			<label for="playlistTitle">List title:</label>
+			<input
+				type="text"
+				id="playlistTitle"
+			/>
+			<button id="createPlaylist">Create List</button>
+		</section>
+		<section class="playlistSelect">
+			<label for="playlistSelect">Select List to add to:</label>
+			<select
+				id="playlistSelect"
+				value="1"
+			></select>
+			<button id="removePlaylist">Remove list</button>
+		</section>
+		<section class="shortName">
+			<label for="shortName">Short title:</label>
+			<input
+				type="text"
+				id="shortName"
+				required
+			/>
+			<button id="addShort">Add Short</button>
+		</section>
 		<section id="shortsList"></section>
 		<script src="popup.js"></script>
 	</body>

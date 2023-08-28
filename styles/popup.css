@@ -3,87 +3,162 @@ body {
   flex-direction: column;
   align-items: center;
   width: 300px;
-  background-color: blueviolet;
-  gap: 10px;
   height: 100vh;
+  background-color: black;
+  color: #f94c10;
 }
-
-h2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
+body::-webkit-scrollbar {
+  width: 10px;
 }
-
-label {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+body::-webkit-scrollbar-track {
+  background: #900c3f;
+}
+body::-webkit-scrollbar-thumb {
+  background: #f94c10;
+  border-radius: 22px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #fb9774;
 }
 
 button {
-  width: 200px;
-  height: 30px;
-  border-radius: 8px;
-  background: linear-gradient(36deg, #f77062, #fe5196);
+  background: #f8de22;
+  color: #900c3f;
+  width: 150px;
+  font-weight: bold;
+  border: none;
+  border-radius: 22px;
+  padding: 5px 20px;
+  transform: scale(1);
+  transition: background 300ms, transform 500ms, color 700ms;
 }
 button:hover {
+  background: #f94c10;
+  color: #f8de22;
+  transform: scale(1.1);
   cursor: pointer;
-  background: linear-gradient(36deg, #fe5196, #f77062);
 }
 
-#removePlaylist {
-  background-color: red;
+h2 {
+  color: #900c3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-#removeButton {
+.createLists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 5px;
+  text-align: center;
+}
+.createLists > label,
+.createLists input {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color: #f94c10;
+}
+.createLists > label:focus,
+.createLists input:focus {
+  background: #f94c10;
+  outline: none;
+  color: black;
+  font-weight: bold;
+}
+
+.playlistSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 5px;
+  width: 200px;
+}
+.playlistSelect > label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+.playlistSelect > select {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+.playlistSelect > button {
+  background: #900c3f;
+  color: white;
+  transform: scale(1);
+  transition: background 300ms, transform 500ms;
+}
+.playlistSelect > button:hover {
+  background: #ec1669;
+  transform: scale(1.1);
+  color: black;
+}
+
+.shortName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.shortName > button {
+  background: #025464;
+  color: white;
+  transform: scale(1);
+  transition: background 300ms, transform 500ms;
+}
+.shortName > button:hover {
+  background: #04a8c8;
+  transform: scale(1.1);
+  color: black;
+}
+
+#shortsList {
+  display: flex;
+  width: 250px;
+}
+#shortsList > ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+#shortsList > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+#shortsList > ul > li > a {
+  text-decoration: none;
+  color: #f94c10;
+  font-size: 14px;
+}
+#shortsList > ul > li > button {
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-weight: bolder;
-  background: red;
+  background: #900c3f;
   color: white;
+  transform: scale(1);
+  transition: background 300ms, transform 500ms;
 }
-
-input {
-  width: 200px;
-  text-align: center;
-  font-weight: bold;
-}
-input:focus {
-  background-color: #f77062;
-}
-
-li {
-  list-style: none;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-a:hover {
-  color: #f77062;
-}
-
-section {
-  width: 200px;
-}
-section > ul {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
-}
-section > ul > li {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#shortsList > ul > li > button:hover {
+  background: #ec1669;
+  transform: scale(1.1);
+  color: black;
 }/*# sourceMappingURL=popup.css.map */

@@ -1,0 +1,17 @@
+button {
+	background: $tertiary-color;
+	color: $primary-color;
+	width: 150px;
+	font-weight: bold;
+	border: none;
+	border-radius: 22px;
+	padding: 5px 20px;
+	transform: scale(1);
+	transition: background 300ms, transform 500ms, color 700ms;
+	&:hover {
+		background: $secondary-color;
+		color: $tertiary-color;
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+}

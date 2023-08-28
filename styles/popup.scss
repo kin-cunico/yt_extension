@@ -1,86 +1,15 @@
-body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 300px;
-	background-color: blueviolet;
-	gap: 10px;
-	height: 100vh;
-}
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+@import "utils/_maps.scss";
 
-h2 {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	gap: 10px;
-}
+@import "base/_base.scss";
+@import "base/_typography.scss";
 
-label {
-	font-size: 20px;
-	font-weight: bold;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
+@import "components/_buttons.scss";
+@import "components/_inputs.scss";
 
-button {
-	width: 200px;
-	height: 30px;
-	border-radius: 8px;
-	background: linear-gradient(36deg, #f77062, #fe5196);
-	&:hover {
-		cursor: pointer;
-		background: linear-gradient(36deg, #fe5196, #f77062);
-	}
-}
-#removePlaylist {
-	background-color: red;
-}
-
-#removeButton {
-	width: fit-content;
-	height: fit-content;
-	font-weight: bolder;
-	background: red;
-	color: white;
-}
-
-input {
-	width: 200px;
-	text-align: center;
-	font-weight: bold;
-	&:focus {
-		background-color: #f77062;
-	}
-}
-
-li {
-	list-style: none;
-	text-align: center;
-}
-
-a {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	&:hover {
-		color: #f77062;
-	}
-}
-
-section {
-	width: 200px;
-	> ul {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		padding: 0;
-		justify-content: space-around;
-		align-items: center;
-		gap: 10px;
-		> li {
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-	}
-}
+@import "layout/_header.scss";
+@import "layout/createLists.scss";
+@import "layout/playlistSelect.scss";
+@import "layout/_shortName.scss";
+@import "layout/_shortsList.scss";

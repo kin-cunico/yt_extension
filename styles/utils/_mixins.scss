@@ -1,0 +1,31 @@
+@mixin txt-input-palette($input-palette) {
+	@each $state, $palette in $input-palette {
+		border: 0.1rem solid map-get($palette, border);
+		background: map-get($palette, bg);
+		color: map-get($palette, txt);
+	}
+}
+
+@mixin button-add {
+	background: $quaternary-color;
+	color: white;
+	transform: scale(1);
+	transition: background 300ms, transform 500ms;
+	&:hover {
+		background: $quaternary-color-light;
+		transform: scale(1.1);
+		color: black;
+	}
+}
+
+@mixin button-delete {
+	background: $primary-color;
+	color: white;
+	transform: scale(1);
+	transition: background 300ms, transform 500ms;
+	&:hover {
+		background: $primary-color-light;
+		transform: scale(1.1);
+		color: black;
+	}
+}
