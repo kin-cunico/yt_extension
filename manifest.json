@@ -1,7 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Youtube Shorts Playlists",
+	"name": "My Bookmars Lists",
 	"version": "1.0",
+	"author": "Kin Cunico",
 	"description": "Adds a button to Youtube Shorts to add the video to a playlist",
 	"permissions": ["activeTab", "storage"],
 	"browser_action": {
