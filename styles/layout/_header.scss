@@ -1,9 +1,15 @@
 h2 {
-	color: $primary-color;
+	color: $tertiary-color-light;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
 	font-size: 24px;
 	font-weight: bold;
+}
+
+.faq {
+	text-decoration: none;
+	color: $quaternary-color-light;
+	font-size: 0.9rem;
 }

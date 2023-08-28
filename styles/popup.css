@@ -4,21 +4,22 @@ body {
   align-items: center;
   width: 300px;
   height: 100vh;
-  background-color: black;
-  color: #f94c10;
+  background-color: #353535;
+  color: #fbed85;
 }
 body::-webkit-scrollbar {
   width: 10px;
 }
 body::-webkit-scrollbar-track {
-  background: #900c3f;
+  background: #69e4fc;
 }
 body::-webkit-scrollbar-thumb {
-  background: #f94c10;
-  border-radius: 22px;
+  background: black;
+  -webkit-transition: background 400ms, ease-in-out;
+  transition: background 400ms, ease-in-out;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: #fb9774;
+  background: #025464;
 }
 
 button {
@@ -40,13 +41,19 @@ button:hover {
 }
 
 h2 {
-  color: #900c3f;
+  color: #fbed85;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.faq {
+  text-decoration: none;
+  color: #69e4fc;
+  font-size: 0.9rem;
 }
 
 .createLists {
@@ -63,11 +70,11 @@ h2 {
   font-weight: bold;
   text-align: center;
   width: 100%;
-  color: #f94c10;
+  color: #fbed85;
 }
 .createLists > label:focus,
 .createLists input:focus {
-  background: #f94c10;
+  background: #69e4fc;
   outline: none;
   color: black;
   font-weight: bold;
@@ -111,6 +118,8 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 .shortName > button {
   background: #025464;
@@ -119,9 +128,17 @@ h2 {
   transition: background 300ms, transform 500ms;
 }
 .shortName > button:hover {
-  background: #04a8c8;
+  background: #69e4fc;
   transform: scale(1.1);
   color: black;
+}
+.shortName > input {
+  text-align: center;
+}
+.shortName > input:focus {
+  background-color: #69e4fc;
+  color: black;
+  outline: none;
 }
 
 #shortsList {
@@ -144,8 +161,9 @@ h2 {
 }
 #shortsList > ul > li > a {
   text-decoration: none;
-  color: #f94c10;
+  color: #f8de22;
   font-size: 14px;
+  font-weight: bold;
 }
 #shortsList > ul > li > button {
   width: -moz-fit-content;

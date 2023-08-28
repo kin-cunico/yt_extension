@@ -4,20 +4,20 @@ body {
 	align-items: center;
 	width: 300px;
 	height: 100vh;
-	background-color: black;
-	color: $secondary-color;
+	background-color: $background-color;
+	color: $tertiary-color-light;
 
 	&::-webkit-scrollbar {
 		width: 10px;
 	}
 	&::-webkit-scrollbar-track {
-		background: $primary-color;
+		background: $quaternary-color-light;
 	}
 	&::-webkit-scrollbar-thumb {
-		background: $secondary-color;
-		border-radius: 22px;
+		background: black;
+		transition: background 400ms, ease-in-out;
 	}
 	&::-webkit-scrollbar-thumb:hover {
-		background: $secondary-color-light;
+		background: $quaternary-color;
 	}
 }

@@ -12,5 +12,8 @@ $tertiary-color-dark: darken($tertiary-color, 20%);
 
 //quaternary-color
 $quaternary-color: #025464;
-$quaternary-color-light: lighten($quaternary-color, 20%);
+$quaternary-color-light: lighten($quaternary-color, 50%);
 $quaternary-color-dark: darken($quaternary-color, 20%);
+
+// background color
+$background-color: #353535;

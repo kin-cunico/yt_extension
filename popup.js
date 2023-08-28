@@ -76,6 +76,11 @@ document.getElementById("addShort").addEventListener("click", function () {
 	let selectedPlaylist =
 		playlistSelect.options[playlistSelect.selectedIndex].value;
 	let shortName = document.getElementById("shortName").value;
+	if (!shortName) {
+		alert("Please enter a short name");
+		return;
+	}
+	document.getElementById("shortName").value = "";
 	chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
 		let currentTab = tabs[0];
 		let shortUrl = currentTab.url;
@@ -107,6 +112,7 @@ document
 		} else {
 			alert("Please enter a playlist title");
 		}
+		document.getElementById("playlistTitle").value = "";
 	});
 
 // update the shorts list when selected playlist changes

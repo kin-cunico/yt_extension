@@ -1,0 +1,47 @@
+body {
+	width: 300px;
+	background-color: $background-color;
+	color: $tertiary-color;
+	font-size: 16px;
+}
+.header {
+	> p {
+		color: white;
+	}
+}
+section {
+	> ul {
+		display: flex;
+		flex-direction: column;
+		list-style: decimal;
+		padding: 0 20px;
+		text-align: justify;
+		color: $tertiary-color;
+		font-weight: bold;
+		font-size: 1.2rem;
+		> li {
+			color: white;
+			font-weight: 400;
+			font-size: 0.8em;
+		}
+	}
+}
+
+article {
+	> h3 {
+		color: $tertiary-color;
+	}
+	> p {
+		color: white;
+	}
+}
+
+span {
+	color: $quaternary-color-light;
+}
+
+a {
+	text-decoration: none;
+	color: $quaternary-color-light;
+	font-weight: bold;
+}

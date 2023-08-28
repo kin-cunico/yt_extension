@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 100vh;
+  background-color: #353535;
+  color: #fbed85;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #69e4fc;
+}
+body::-webkit-scrollbar-thumb {
+  background: black;
+  -webkit-transition: background 400ms, ease-in-out;
+  transition: background 400ms, ease-in-out;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #025464;
+}
+
+body {
+  width: 300px;
+  background-color: #353535;
+  color: #f8de22;
+  font-size: 16px;
+}
+
+.header > p {
+  color: white;
+}
+
+section > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: decimal;
+  padding: 0 20px;
+  text-align: justify;
+  color: #f8de22;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+section > ul > li {
+  color: white;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+article > h3 {
+  color: #f8de22;
+}
+article > p {
+  color: white;
+}
+
+span {
+  color: #69e4fc;
+}
+
+a {
+  text-decoration: none;
+  color: #69e4fc;
+  font-weight: bold;
+}/*# sourceMappingURL=faq.css.map */
